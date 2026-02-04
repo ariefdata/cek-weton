@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>cek weton</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body data-theme="earth">
+    <main class="container">
+      <header class="hero">
+        <div class="badge">Pranata Jawa</div>
+        <h1>Cek Weton</h1>
+        <p class="subtitle">
+          Pilih tanggal lahir untuk melihat hari, pasaran, dan wuku.
+        </p>
+      </header>
+
+      <section id="hari-ini" class="hari-ini" aria-live="polite">
+        <h2>Medan Energi Hari Ini</h2>
+        <p class="tanggal-hari-ini">Memuat tanggal hari ini...</p>
+        <div class="hari-ini-grid">
+          <p>Hari: <span id="hari-ini-hari">-</span></p>
+          <p>Pasaran: <span id="hari-ini-pasaran">-</span></p>
+          <p>Wuku: <span id="hari-ini-wuku">-</span></p>
+          <p>Neptu: <span id="hari-ini-neptu">-</span></p>
+        </div>
+        <p id="hari-ini-ringkas" class="ringkas ringkas-mini">
+          Menyusun ringkasan...
+        </p>
+      </section>
+
+      <div class="theme-switch" aria-label="Tema">
+        <button class="theme-btn is-active" type="button" data-theme="earth">
+          Klasik
+        </button>
+        <button class="theme-btn" type="button" data-theme="royal">
+          Royal
+        </button>
+        <button class="theme-btn" type="button" data-theme="night">
+          Malam
+        </button>
+      </div>
+
+      <label for="tanggal">Tanggal Lahir</label>
+      <input type="date" id="tanggal" />
+      <button id="hitung">Cek</button>
+
+      <div id="hasil">
+        <p>Hari: <span id="hasil-hari">-</span></p>
+        <p>Pasaran: <span id="hasil-pasaran">-</span></p>
+        <p>Wuku: <span id="hasil-wuku">-</span></p>
+        <p>Neptu: <span id="hasil-neptu">-</span></p>
+      </div>
+      <p id="ringkas" class="ringkas">
+        Ringkasan akan muncul setelah kamu klik “Cek”.
+      </p>
+
+      <section id="interpretasi" aria-live="polite">
+        <h2>Interpretasi</h2>
+        <p class="hint">Memuat interpretasi...</p>
+        <div class="interpret-list">
+          <p><strong>Hari</strong> <span id="desc-hari">-</span></p>
+          <p><strong>Pasaran</strong> <span id="desc-pasaran">-</span></p>
+          <p><strong>Wuku</strong> <span id="desc-wuku">-</span></p>
+          <p><strong>Neptu</strong> <span id="desc-neptu">-</span></p>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
